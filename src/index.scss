@@ -1,0 +1,24 @@
+@import './assets/sass/reset';
+@import './assets/sass/variable';
+@import './assets/sass/mixin';
+@import './assets/sass/base';
+
+//Layout
+@import './layout/LayoutMain/LayoutMain';
+@import './layout/LayoutModalPopUp/LayoutModalPopUp';
+
+//Page
+@import './pages/Auth/Auth';
+@import './pages/ProjectDetail/ProjectDetail';
+@import './pages/TaskDetail/TaskDetail';
+@import './pages/NotFoundPage/NotFoundPage';
+
+//Component
+@import './components/Login/Login';
+@import './components/Register/Register';
+@import './components/Loading/Loading';
+@import './components/ProjectDetailHeader/ProjectDetailHeader';
+@import './components/ProjectDetailBody/ProjectDetailBody';
+@import './components/FormCreateEditProject/FormCreateEditProject';
+@import './components/FormCreateEditTask/FormCreateEditTask';
+@import './components//CommentComponent/CommentComponent';

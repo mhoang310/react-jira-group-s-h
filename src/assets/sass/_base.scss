@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: $c-4;
+    background-color: $bg-2;
+    font-size: 1.6rem;
+    font-weight: $fw-regular;
+    width: 100%;
+}
+h2 {
+    @include render-title();
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.btn {
+    &.btn-primary {
+        @include render-button($bg-1, $c-3, $c-3, $ptb: 7px, $plr: 7px);
+    }
+    &.btn-secondary {
+        @include render-button(transparent, $c-1, $c-1, $ptb: 7px, $plr: 7px);
+    }
+    &.btn-outline {
+        @include render-button($bg-5, $c-3, $c-3, $ptb: 7px, $plr: 7px);
+    }
+}
+
+.view-center {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center__column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Toastify__toast-container {
+    font-size: $fz-xs;
+    line-height: 1.3;
+}
+
+.text-field {
+    position: relative;
+    margin-bottom: $m-2;
+
+    label {
+        display: inline-block;
+        font-weight: 600;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 10px;
+        background-color: $c-3;
+        padding: 1px 5px;
+        font-size: 12px;
+        transform: translateY(-50%);
+        color: $c-4;
+    }
+
+    input {
+        padding: 11px;
+        display: block;
+        width: 100%;
+        font-size: 14px;
+        border: 1px solid $bg-1;
+        border-radius: 4px;
+        background-color: transparent;
+        color: $c-4;
+    }
+    .text-field-error {
+        font-size: $fz-xs;
+        color: red;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.textEditor {
+    font-size: $fz-sm;
+    font-weight: $fw-regular;
+    margin-bottom: $m-1;
+}
+.quill {
+    margin-bottom: $m-2;
+    .ql-toolbar:nth-child(2) {
+        display: none;
+    }
+    .ql-container {
+        min-height: 200px;
+    }
+}
+.selectCategory {
+    margin-bottom: $m-1;
+    .selectCategory__select {
+        width: 100%;
+        border: 1px solid #000;
+        padding: 8px;
+        font-size: 14px;
+        outline: none;
+        border-radius: 4px;
+    }
+    .selectCategory__option {
+        width: 100%;
+        border: 1px solid #000;
+        padding: 5px 10px;
+        font-size: $fz-xs;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(
+        to bottom,
+        #d16ba5,
+        #c777b9,
+        #ba83ca,
+        #aa8fd8,
+        #9a9ae1,
+        #8aa7ec,
+        #79b3f4,
+        #69bff8,
+        #52cffe,
+        #41dfff,
+        #46eefa,
+        #5ffbf1
+    );
+    border-radius: 50px;
+    z-index: 100000;
+}

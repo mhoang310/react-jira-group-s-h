@@ -1,0 +1,9 @@
+.formCreateEditProject {
+    h2 {
+        @include render-title();
+    }
+    button {
+        max-width: 150px;
+        font-size: $fz-sm;
+    }
+}

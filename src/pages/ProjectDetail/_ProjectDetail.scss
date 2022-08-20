@@ -1,0 +1,21 @@
+.projectDetail {
+    .projectDetail__breadCrumb {
+        margin-bottom: $m-2;
+    }
+    h2 {
+        @include render-title();
+    }
+    .projectDetail__header {
+        margin-bottom: $m-4;
+        display: flex;
+        gap: $m-2;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .projectDetail__addTaskButton {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin: $m-4;
+    }
+}
